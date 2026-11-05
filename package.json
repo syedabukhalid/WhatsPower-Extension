@@ -1,0 +1,15 @@
+{
+  "name": "whatspower-extension",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Manifest V3 companion extension for WhatsApp Web",
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc --noEmit",
+    "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.287",
+    "typescript": "^5.7.2"
+  }
+}
